@@ -12,7 +12,7 @@ body {
   h1 {
     margin-bottom: 30px;
   }
-  
+  /* margin: top right bottom left : */
   h2 {
     margin: 40px 0 20px;
   }
@@ -45,19 +45,19 @@ body {
   }
   
   .slideDown {
-    animation: slideDown 1s ease-out;
+    animation: slideDown 5s ease-out;
   }
   
   .slideUp {
-    animation: slideUp 1s ease-out;
+    animation: slideUp 5s ease-out;
   }
   
   .slideLeft {
-    animation: slideLeft 1s ease-out;
+    animation: slideLeft 5s ease-out;
   }
   
   .slideExpandUp {
-    animation: slideExpandUp 1.5s ease-out;
+    animation: slideExpandUp 5s ease-out;
   }
   
   .fadeIn {
@@ -65,7 +65,7 @@ body {
   }
   
   .bigEntrance {
-    animation: bigEntrance 1.5s ease-out;
+    animation: bigEntrance 8s ease-out;
   }
   
   /* Hover Animations */

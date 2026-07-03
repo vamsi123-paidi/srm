@@ -6,13 +6,22 @@
     <title>Document</title>
     <style>
         .boxes{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             background-color: aqua;
             height: 250px;
             width: 300px;
             border: 2px solid rgb(224, 13, 13);
             padding: 20px;
             margin: 200px;
-            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 4s;
+            box-shadow:2px 80px 100px rgb(13, 13, 13) ;
+        }
+        .boxes:hover{
+            background-color: black;
+            color: white;
         }
     </style>
 </head>
