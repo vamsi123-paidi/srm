@@ -12,6 +12,33 @@
 //     index.style.color = "red"
 // })
 
-const heading1 = document.getElementById('heading1')
-// heading1.innerText = "newly added text in step 4"
-heading1.innerHTML = '<h1>hello world </h1>'
+// const heading1 = document.getElementById('heading1')
+// // heading1.innerText = "newly added text in step 4"
+// heading1.innerHTML = '<h1>hello world </h1>'
+
+// const outer = document.getElementById('outer')
+// const inner = document.createElement('div')
+// inner.setAttribute('id',"inner");
+// inner.innerHTML= '<h1>this is added dynamically</h1>'
+
+// outer.appendChild(inner)
+
+// const btn = document.getElementById('btn')
+// btn.addEventListener("click",()=>{
+//     document.body.style.backgroundColor= "black"
+// })
+// const btn1 = document.getElementById('btn1')
+// btn1.addEventListener("click",()=>{
+//     document.body.style.backgroundColor= "white"
+// })
+
+// const handleSubmit = document.getElementById("handleSubmit")
+
+handleSubmit.addEventListener('submit',(e)=>{
+    e.preventDefault()
+    const userInput = document.getElementById("userInput").value;
+    alert(`hello ${userInput}`)
+})
+
+
+
