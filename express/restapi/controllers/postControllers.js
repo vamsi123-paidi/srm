@@ -1,4 +1,4 @@
-
+const User = require('../models/User')
 let students = [
   { id: 1, name: "Anjali", course: "Math" },
   { id: 2, name: "Ravi", course: "Science" },
@@ -42,4 +42,14 @@ const deleteStudent = (req, res) => {
   }
 }
 
-module.exports = {addStudent,updateStudent,deleteStudent}
+const addUser = async (req, res) => {
+  try {
+    const student = new User(req.body);
+    const saved = await student.save();
+    res.status(201).json(saved);
+  } catch (err) {
+    res.status(400).json({ error: err.message });
+  }
+}
+
+module.exports = {addStudent,updateStudent,deleteStudent,addUser}

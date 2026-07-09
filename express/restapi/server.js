@@ -5,8 +5,10 @@ const port = 3000;
 app.use(express.json())
 const getRoutes = require('./routes/getRoutes')
 const postRoute = require("./routes/postRoutes")
-mongoose.connect("mongodb+srv://vamsipaidi251002_db_user:root@cluster0.3nwfclt.mongodb.net/?appName=Cluster0").then(()=>{console.log("mogodb connected")}).catch((err)=>{console.log(err.message)})
 
+const dbConn = require("./config/db")
+
+dbConn()
 app.get('/',()=>{
     res.send("welcome to student management system")
 })
